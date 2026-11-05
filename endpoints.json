@@ -1,0 +1,7 @@
+{
+  "_help": "Fill these from the extension's erp-endpoints.json. Use {studentId} in body values. Set enabled:true when ready. (Subject-wise attendance has its own dedicated route in server.mjs — it isn't driven by this file.)",
+  "attendance": { "enabled": true, "method": "POST", "path": "/erp/api/v1.0/StudentDailyAttendance/StudentWiseAttendance", "body": { "FromDate": "{fromDate}", "ToDate": "{toDate}", "StudentId": "{studentId}" } },
+  "timetable":  { "enabled": false, "method": "POST", "path": "/erp/api/v1.0/CHANGE_ME", "body": { "StudentId": "{studentId}" } },
+  "hallTicket": { "enabled": false, "method": "POST", "path": "/erp/api/v1.0/CHANGE_ME", "body": { "StudentId": "{studentId}" } },
+  "academics":  { "enabled": false, "method": "POST", "path": "/erp/api/v1.0/CHANGE_ME", "body": { "StudentId": "{studentId}" } }
+}
